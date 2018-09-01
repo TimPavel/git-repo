@@ -10,17 +10,8 @@
           new MenuItem('/blog', 'Blog')
         ]);
 
-        document.body.appendChild(menu.render());
-        
-				var buttonDeleteMenu = document.createElement('button');
-				buttonDeleteMenu.textContent = 'Удалить меню';
-				document.body.appendChild(buttonDeleteMenu);
-				buttonDeleteMenu.addEventListener('click', Menu.prototype.remove);
+				document.body.appendChild(menu.render());
 				
-				var buttonDeleteItem = document.createElement('button');
-				buttonDeleteItem.textContent = 'Удалить пункт меню';
-				document.body.appendChild(buttonDeleteItem);
-				buttonDeleteItem.addEventListener('click', MenuItem.prototype.remove);
       }
     </script>
   </head>
